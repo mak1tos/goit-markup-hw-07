@@ -578,13 +578,13 @@ ul {
   text-align: center;
 }
 
-.team __item {
+.team__item {
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team __item + .team __item {
+.team .team__item + .team__item {
   margin-left: 30px;
 }
 
@@ -710,16 +710,16 @@ ul {
   margin-bottom: 50px;
 }
 
-.filtr_item + .filtr__item {
-  margin-left: 8px;
-}
-
-.filtr__item {
+.filtr .filtr__item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: va(--primery-text-color);
+}
+
+.filtr .filtr__item + .filtr__item {
+  margin-left: 8px;
 }
 
 .projects {
@@ -791,11 +791,7 @@ ul {
           transform: translateY(0);
 }
 
-.name-project {
-  padding: 20px 24px;
-}
-
-.name-project__title {
+.name-projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -803,12 +799,16 @@ ul {
   color: var(--primery-text-color);
 }
 
-.name-project__text {
+.name-projects__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.name-project {
+  padding: 20px 24px;
 }
 
 .backdrop {
