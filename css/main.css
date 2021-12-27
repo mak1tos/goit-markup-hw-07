@@ -112,10 +112,6 @@ ul {
   color: var(--blue);
 }
 
-.main-nav__logo-dark {
-  color: #000;
-}
-
 .nav-footer__lofo-light {
   color: #fff;
 }
@@ -129,6 +125,10 @@ ul {
           align-items: center;
 }
 
+.main-nav__logo-dark {
+  color: #000;
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,13 +138,6 @@ ul {
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
 }
 
 .site-nav__link {
@@ -160,7 +153,7 @@ ul {
   color: var(--primery-text-color);
 }
 
-.site-nav__link.current {
+.site-nav.current {
   color: var(--blue);
 }
 
@@ -175,21 +168,15 @@ ul {
   border-radius: 2px;
 }
 
-.site-nav__link,
-.contact-nav-link {
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--blue);
 }
 
-.contact-nav__link:hover,
-.contact-nav__link:focus {
-  color: var(--blue);
+.contact-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
 }
 
 .contact-nav {
@@ -222,6 +209,10 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact-nav__link:hover, .contact-nav__link:focus {
+  color: var(--blue);
+}
+
 .contact-nav__item + .contact-nav__item {
   margin-left: 30px;
 }
@@ -229,6 +220,13 @@ ul {
 .contact-nav__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.site-nav__link,
+.contact-nav-link {
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-footer__contact-social-link {
