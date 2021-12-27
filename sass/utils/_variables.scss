@@ -1,0 +1,99 @@
+:root {
+    --primery-text-color: #212121;
+    --secondary-text-color: #757575;
+    --blue: #2196f3;
+    --white: #ffffff;
+    --banner: #2f303a;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 94px 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 10px 25px;
+    min-width: 186px;
+    border: transparent;
+    position: relative;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+
+    color: var(--white);
+    background-color: var(--blue);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filtr .button {
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+    border: transparent;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+
+    color: var(--primery-text-color);
+    background-color: #f5f4fa;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
