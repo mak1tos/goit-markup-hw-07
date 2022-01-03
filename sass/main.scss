@@ -1,6 +1,9 @@
 @import './utils/variables';
-// @import './base/moder-normalize';
-@import './components/header';
+@import './components/body';
+@import './components/visually-hidden' @import './components/sections';
+@import './components/container';
+@import './components/button';
+@import './components/filtr-button' @import './components/header';
 @import './components/footer';
 @import './components/hero';
 @import './components/features';

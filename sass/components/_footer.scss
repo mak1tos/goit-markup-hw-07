@@ -133,7 +133,7 @@
     &:focus {
         border-color: var(--white);
     }
-    &t:focus::placeholder {
+    &:focus::placeholder {
         color: var(--white);
     }
 }
